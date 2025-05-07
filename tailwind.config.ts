@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
+import animatePlugin from "tailwindcss-animate"; // ✅ use top-level import instead of require()
 
-export default {
+const config: Config = {
   darkMode: ["class", "dark"],
   content: [
     "./pages/**/*.{ts,tsx}",
@@ -69,5 +70,7 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-} satisfies Config;
+  plugins: [animatePlugin], // ✅ safely used here
+};
+
+export default config;

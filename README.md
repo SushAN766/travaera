@@ -20,7 +20,7 @@ Welcome to **Travaera**, a modern, AI-powered travel itinerary planner designed 
 ##  Project Structure
 
 ```text
-sushan766-travaera/
+travaera/
 ├── public/                  # Static assets (optional)
 ├── src/
 │   ├── components/          # Custom and UI components
@@ -44,8 +44,8 @@ sushan766-travaera/
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/sushan766/sushan766-travaera.git
-cd sushan766-travaera
+git clone https://github.com/SushAN766/travaera.git
+cd travaera
 ```
 
 ### 2. Install Dependencies

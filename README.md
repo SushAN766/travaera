@@ -4,7 +4,7 @@ Welcome to **Travaera**, a modern, AI-powered travel itinerary planner designed 
 
 ---
 
-## ✨ Features
+##  Features
 
 -  **AI-Driven Travel Itinerary**: Powered by Gemini, intelligently generates custom travel plans.
 -  **Interactive TravelForm**: Gather user inputs like destination, date, and preferences.

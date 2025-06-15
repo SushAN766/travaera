@@ -32,7 +32,12 @@ export function TravelForm({ onSubmit, isLoading }: TravelFormProps) {
     <form onSubmit={handleSubmit} className="space-y-6 animate-fade-in">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="space-y-2">
-          <Label htmlFor="source">Source Location</Label>
+          <Label 
+            htmlFor="source"
+            className="text-sm font-medium leading-none text-white peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          >
+            Source Location
+          </Label>
           <Input
             id="source"
             required
@@ -44,7 +49,13 @@ export function TravelForm({ onSubmit, isLoading }: TravelFormProps) {
           />
         </div>
         <div className="space-y-2">
-          <Label htmlFor="destination">Destination</Label>
+          <Label 
+            htmlFor="destination"
+            className="text-sm font-medium leading-none text-white peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          >
+          
+            Destination
+          </Label>
           <Input
             id="destination"
             required
@@ -56,7 +67,13 @@ export function TravelForm({ onSubmit, isLoading }: TravelFormProps) {
           />
         </div>
         <div className="space-y-2">
-          <Label htmlFor="startDate">Start Date</Label>
+          <Label 
+            htmlFor="startDate"
+            className="text-sm font-medium leading-none text-white peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          >
+          
+            Start Date
+          </Label>
           <Input
             id="startDate"
             type="date"
@@ -68,7 +85,12 @@ export function TravelForm({ onSubmit, isLoading }: TravelFormProps) {
           />
         </div>
         <div className="space-y-2">
-          <Label htmlFor="endDate">End Date</Label>
+          <Label 
+            htmlFor="endDate"
+            className="text-sm font-medium leading-none text-white peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          >
+            End Date
+          </Label>
           <Input
             id="endDate"
             type="date"
@@ -80,7 +102,12 @@ export function TravelForm({ onSubmit, isLoading }: TravelFormProps) {
           />
         </div>
         <div className="space-y-2">
-          <Label htmlFor="budget">Budget</Label>
+          <Label 
+            htmlFor="budget"
+            className="text-sm font-medium leading-none text-white peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          >
+            Budget
+          </Label>
           <Input
             id="budget"
             required
@@ -92,7 +119,12 @@ export function TravelForm({ onSubmit, isLoading }: TravelFormProps) {
           />
         </div>
         <div className="space-y-2">
-          <Label htmlFor="travelers">Number of Travelers</Label>
+          <Label 
+            htmlFor="travelers"
+            className="text-sm font-medium leading-none text-white peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          >
+            Number of Travelers
+          </Label>
           <Input
             id="travelers"
             type="number"
@@ -109,7 +141,12 @@ export function TravelForm({ onSubmit, isLoading }: TravelFormProps) {
         </div>
       </div>
       <div className="space-y-2">
-        <Label htmlFor="interests">Interests & Preferences</Label>
+        <Label 
+          htmlFor="interests"
+          className="text-sm font-medium leading-none text-white peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          >
+            Interests & Preferences
+          </Label>
         <Textarea
           id="interests"
           required
@@ -121,7 +158,8 @@ export function TravelForm({ onSubmit, isLoading }: TravelFormProps) {
           className="h-24"
         />
       </div>
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center space-x-2"
+      >
         <Checkbox
           id="includeTransportation"
           checked={preferences.includeTransportation}
@@ -134,8 +172,8 @@ export function TravelForm({ onSubmit, isLoading }: TravelFormProps) {
         />
         <Label
           htmlFor="includeTransportation"
-          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-        >
+          className="text-sm font-medium leading-none text-white peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          >
           Include transportation details
         </Label>
       </div>

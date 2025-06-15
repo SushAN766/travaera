@@ -33,7 +33,7 @@ const Index = () => {
   return (
     <div
       className="relative min-h-screen bg-cover bg-center bg-no-repeat bg-gradient-to-b from-travel-secondary/10 to-travel-accent/10"
-      style={{ backgroundImage: "url('/home-bg.png')" }} 
+      style={{ backgroundImage: "url('/travel-bg.png')" }} 
     >
       
 
